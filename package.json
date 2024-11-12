@@ -1,0 +1,16 @@
+{
+  "name": "ze-demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "biome check ./packages --fix",
+    "dev": "pnpm -r run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3"
+  }
+}
