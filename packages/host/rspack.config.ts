@@ -11,14 +11,25 @@ const targets = ['chrome >= 87', 'edge >= 88', 'firefox >= 78', 'safari >= 14'];
 
 export default withZephyr()({
   context: __dirname,
+  output: {
+    publicPath: 'auto',
+  },
   entry: {
     main: './src/main.tsx',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ['postcss-loader'],
+        type: 'css',
+      },
       {
         test: /\.svg$/,
         type: 'asset',

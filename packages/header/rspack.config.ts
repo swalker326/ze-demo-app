@@ -4,7 +4,6 @@ import { withZephyr } from 'zephyr-webpack-plugin';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
 import { mfConfig } from './mf.config';
 
-
 const isDev = process.env.NODE_ENV === 'development';
 
 // Target browsers, see: https://github.com/browserslist/browserslist
@@ -20,6 +19,11 @@ export default withZephyr()({
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ['postcss-loader'],
+        type: 'css',
+      },
       {
         test: /\.svg$/,
         type: 'asset',

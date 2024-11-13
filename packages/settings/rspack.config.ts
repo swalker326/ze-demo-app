@@ -20,6 +20,11 @@ export default withZephyr()({
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: ['postcss-loader'],
+        type: 'css',
+      },
+      {
         test: /\.svg$/,
         type: 'asset',
       },

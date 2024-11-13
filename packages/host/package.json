@@ -11,8 +11,10 @@
   "dependencies": {
     "@module-federation/enhanced": "^0.7.2",
     "@module-federation/sdk": "^0.7.2",
+    "localforage": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.28.0",
     "zephyr-webpack-plugin": "^0.0.23"
   },
   "devDependencies": {
@@ -22,8 +24,12 @@
     "@rspack/plugin-react-refresh": "1.0.0",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
     "react-refresh": "^0.14.0",
+    "tailwindcss": "^3.4.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
